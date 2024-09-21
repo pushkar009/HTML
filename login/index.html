@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+  <head>
+    <title>My Login page</title>
+    <link rel="icon" href="C:\Program Files\BraveSoftware\Brave-Browser\Application\108.1.46.134\VisualElements\SmallLogo.png">
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+    <body>
+    <div class="login-card">
+      <h2>Sign Up</h2>
+      <h3>Enter your credentials</h3>
+      <form class="login-form">
+        <div class="username">
+          <input 
+            spellcheck="false" 
+            class="control"
+            type="text" 
+            placeholder="Username" 
+            onkeyup="handleChange(event)" 
+            onkeydown="handleStartTyping()"
+          />
+          <div id="spinner" class="spinner"></div>
+        </div>
+        <div id="alert" class="alert">Username already exist</div>
+        <input spellcheck="false" class="control" id="password" type="password" placeholder="Password"/>
+        <button class="control" type="button">SIGN UP</button>
+      </form>
+    </div>
+    <script type = "text/javascript" src="./js/script.js"></script>
+  </body>
+</html>
