@@ -1,6 +1,4 @@
 # HTML
-My First html.
-* This is my First html page on github.<br>
-* This Page has javascript linked to it.<br>
-The javascript will find the element by id and replace it.
-<br> So the text will change from "Hello!" to "I'm Pushkar."
+* This repository contains some primary html proects.
+* These projects were made just for fun and learning purpose by me.
+* You can copy and try it yourself. Feel free to make your own changes to codes and play!
