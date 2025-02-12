@@ -1,7 +1,5 @@
-const usernames = ["Pushkar", "Pushkar309", "Pushkar009", ""];
-
-const spinner = document.getElementById("spinner"),
-    alert = document.getElementById("alert");
+var usernames = ["Pushkar", "Pushkar123", "Pushkar009", ""];
+const spinner = document.getElementById("spinner"), alert = document.getElementById("alert");
 
 const updateUi = (value) => {
     console.log("value", value);
@@ -35,14 +33,19 @@ const handleStartTyping = () => {
 
 const handleChange = debounce((input) => {
     const { value } = input.target;
-
     updateUi(value);
 }, 500);
 
-let docTitle = document.title;
-window.addEventListener("blur", () =>{
-    document.title = "Please Sign Up First";
-})
-window.addEventListener("focus", () => {
-    document.title = docTitle;
-});
+const passck = document.getElementById("passck");
+
+function validatePassword(pass) {
+    const regex = /^(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,}$/;
+  
+    if (regex.test(pass)) {
+      passck.classList.remove("visible");
+      return true;
+    } else {
+      passck.classList.add("visible");
+      return false;
+    }
+}
