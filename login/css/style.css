@@ -18,7 +18,7 @@ body {
     display: grid;
     place-items: center;
     margin: 0;
-    background-image: url("D:/Code Files/blurry.svg");
+    background-image: url("./blurry.svg");
     background-repeat: no-repeat;
     background-size: 200vh;
     font-family: "Euclid Circular A";
@@ -133,4 +133,31 @@ button {
 
 .alert.visible {
     height: 32px;
+}
+
+.checkbx {
+    height: 30px;
+    margin-left: 5px;
+    text-align: left;
+    font-family: "Euclid Circular A";
+    font-size: 1rem;
+    font-weight: 500;
+    color: #3a334e;
+}
+
+form label input {
+    accent-color: rebeccapurple;
+}
+
+.passck {
+    overflow: hidden;
+    text-align: left;
+    padding: 0 16px;
+    color: #ff3e72;
+    height: 0;
+    transition: 0.3s;
+}
+
+.passck.visible {
+    height: 30px;
 }
